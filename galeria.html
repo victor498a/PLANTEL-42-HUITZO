@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Plantel 42 Huitzo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .galeria-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .galeria-container img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="barra-superior">
+      <img src="img/COBAO%20LOGO.jpg" alt="Logo COBAO" class="logo">
+      <h1>Plantel 42 Huitzo</h1>
+    </div>
+    <nav class="menu-principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="galeria.html" class="activo">Galería</a>
+      <a href="capacitaciones.html">Capacitaciones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <p><a href="index.html">Inicio</a> &gt; Galería</p>
+  </div>
+
+  <main class="info-principal">
+    <h2>Galería de Fotos</h2>
+    <p>Explora momentos destacados del Plantel 42 Huitzo.</p>
+    <div class="galeria-container">
+      <img src="img/EVENTO%2001.jpg" alt="Evento 1">
+      <img src="img/EVENTO%2002.jpg" alt="Evento 2">
+      <img src="img/EVENTO%2003.jpg" alt="Evento 3">
+      <img src="img/EVNETO%2004.jpg" alt="Evento 4">
+     <img src="img/EVENTO%2005.jpg" alt="Evento 5">
+     <img src="img/EVENTO%2006.jpg" alt="Evento 6">
+     <img src="img/EVENTO%2007.jpg" alt="Evento 7">
+       <img src="img/EVENTO%208.jpg" alt="Evento 8">
+       <img src="img/EVENTO%2009.jpg" alt="Evento 9">
+      <img src="img/ESCUELA.jpg" alt="Instalación 1">
+      <img src="img/ESCUELA%202.jpg" alt="Instalación 2">
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>COBAO Plantel 42 Huitzo</strong></p>
+      <p>Dirección: Calle Principal #123, Huitzo, Oaxaca.</p>
+      <p>Teléfono: 951 123 4567 | Correo: contacto@cobao42.edu.mx</p>
+      <p>&copy; 2025 | Educación Pública de Calidad</p>
+    </div>
+  </footer>
+</body>
+</html>

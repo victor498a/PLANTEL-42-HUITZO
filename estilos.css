@@ -1,0 +1,123 @@
+/* Hoja de estilos personalizada con colores institucionales: vino, gris, blanco y toques de negro */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+header {
+  background-color: #7b1f2d; /* rojo vino */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu-principal {
+  background-color: #d3d3d3; /* gris claro */
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-principal a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1a1a1a; /* negro suave */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-principal a:hover,
+.menu-principal a.activo {
+  color: #7b1f2d;
+}
+
+.breadcrumb {
+  margin: 15px;
+  font-size: 14px;
+  color: #b3aaaa;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  background: #989898;
+  color: white;
+  text-align: center;
+  height: 200px;
+}
+
+.slide {
+  display: none;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+h2 {
+  color: #7b1f2d;
+  margin-bottom: 15px;
+}

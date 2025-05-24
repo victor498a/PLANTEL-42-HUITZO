@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Plantel 42 Huitzo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .formulario {
+      background: white;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .formulario button {
+      background: #B22222;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .formulario button:hover {
+      background: #8B0000;
+    }
+    .mensaje-exito {
+      color: green;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="barra-superior">
+      <img src="img/COBAO%20LOGO.jpg" alt="Logo COBAO" class="logo">
+      <h1>Plantel 42 Huitzo</h1>
+    </div>
+    <nav class="menu-principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="galeria.html">Galería</a>
+      <a href="capacitaciones.html">capacitaciones</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <p><a href="index.html">Inicio</a> &gt; Contacto</p>
+  </div>
+
+  <main>
+    <section class="formulario">
+      <h2>Formulario de Contacto</h2>
+      <form id="formContacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="mensajeExito" class="mensaje-exito" style="display: none;">¡Mensaje enviado con éxito!</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>COBAO Plantel 42 Huitzo</strong></p>
+      <p>Dirección: Calle Principal #123, Huitzo, Oaxaca.</p>
+      <p>Teléfono: 951 123 4567 | Correo: contacto@cobao42.edu.mx</p>
+      <p>&copy; 2025 | Educación Pública de Calidad</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("formContacto").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("mensajeExito").style.display = "block";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+
